@@ -42,12 +42,18 @@ background(c);
   if(millis() - Time > 12400){
    c=color(85,193,213);
   }
+  if(millis() - Time > 13400){
+    cube (200,200);
+  }
+  if(millis() - Time > 15600){
+    cube (250,250);
+  }
 }
 
 function cube(size,color) {
   noFill();
   stroke(255);
-  rotateX(frameCount * 0.001);
+  rotateX(frameCount * 0.0001);
   rotateY(frameCount * 0.02);
   box(size,size,size);
 }
